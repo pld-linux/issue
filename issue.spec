@@ -5,7 +5,7 @@ Summary(pl):	Wersja Linuksa PLD
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
 Version:	1.0
-Release:	9
+Release:	10
 License:	Free
 Group:		Base
 Group(de):	Gründsätzlich
