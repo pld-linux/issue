@@ -5,7 +5,7 @@ Summary(pl):	Wersja Linuxa PLD.
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
 Version:	1.0
-Release:	5
+Release:	6
 Copyright:	free
 Group:		Base
 Group(pl):	Podstawowe
@@ -32,23 +32,25 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
-  .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
- :|:
- :|:  Welcome to \n
- :|:  \d \t
- :|:
-  \`-----------[ \r ]--(\m)------*
+c
+ .----------------------< PLD GNU/Linux 1.0 (Ra) >----------------------*
+:|:
+:|:  Welcome to \n
+:|:  \d \t
+:|:
+ \`---{ \u users }---[ \r ]---(\m)------*
+
 EOF
-echo -n "  \l" >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
+echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
-  .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
- :|:
- :|:  Welcome to %h
- :|:  %d
- :|:
-  \`-----------[ %r ]--(%m)------*
-  
+ .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
+:|:
+:|:  Welcome to %h
+:|:  %d
+:|:
+ \`-----------[ %r ]--(%m)------*
+ 
 EOF
 
 echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
