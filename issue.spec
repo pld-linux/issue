@@ -2,8 +2,8 @@ Summary:	    PLD Linux release file with logo
 Summary(de):	PLD Linux Release-Datei mit logo
 Summary(pl):	Wersja Linuxa PLD z logiem
 Name:		      issue
-Version:	    1.0
-Release:	    1
+Version:	    2.0
+Release:	    1 
 Copyright:	  free
 Group:		    Base
 Group(pl):	  Podstawowe
