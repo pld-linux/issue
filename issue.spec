@@ -50,7 +50,7 @@ EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
- .------------------------< PLD Linux 2.0 (Acze) >--------*
+ .------------------------< PLD Linux 2.0 (Ac) >--------*
 :|:
 :|:  Welcome to %h
 :|:  %d
@@ -59,7 +59,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
 
 EOF
 
-echo "2.0 PLD Linux (Acze)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
+echo "2.0 PLD Linux (Ac)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
 %clean
 rm -rf $RPM_BUILD_ROOT
