@@ -38,8 +38,8 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
  :|:  \d \t
  :|:
   \`-----------[ \r ]--(\m)------*
-  
 EOF
+echo -n "  \l" >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
   .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
