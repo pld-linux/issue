@@ -43,14 +43,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 /etc/pld-release
 %config(noreplace) /etc/issue*
-
-%changelog
-* Thu Jun 24 1999 Artur Frysiak <wiget@pld.org.pl>
-  [1.0-2]
-- build for PLD-stable
-- removed Source
-- separate issue and issue.net
-
-* Tue Dec 08 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
-   [1.1-1d]
--  build for prerelease-1.
