@@ -5,7 +5,7 @@ Summary(pl):	Wersja Linuxa PLD.
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
 Version:	1.0
-Release:	3
+Release:	4
 Copyright:	free
 Group:		Base
 Group(pl):	Podstawowe
@@ -30,14 +30,26 @@ PLD Linux sürüm dosyasý
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
- 
-echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
-echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/issue
-echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net
-cat >> $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
-Kernel \\r on an \\m
+
+cat  >> $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
+  .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
+ :|:
+ :|:  Welcome to \n
+ :|:  \d \t
+ :|:
+  `-----------[ \r ]--(\m)------*
+  
 EOF
-echo "Kernel %r on an %m" >> $RPM_BUILD_ROOT%{_sysconfdir}/issue.net
+cat  >> $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
+  .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
+ :|:
+ :|:  Welcome to %h
+ :|:  %d
+ :|:
+  `-----------[ %r ]--(%m)------*
+  
+EOF
+echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
 %clean
 rm -rf $RPM_BUILD_ROOT
