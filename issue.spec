@@ -5,11 +5,13 @@ Summary(pl):	Wersja Linuxa PLD.
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
 Version:	1.0
-Release:	6
+Release:	7
 Copyright:	free
 Group:		Base
 Group(pl):	Podstawowe
 Buildarch:	noarch
+Obsoletes:	redhat-release
+Obsoletes:	mandrake-release
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
