@@ -9,13 +9,13 @@ Release:	12
 License:	GPL
 Group:		Base
 Buildarch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
 Obsoletes:	issue-alpha
 Obsoletes:	issue-fancy
 Obsoletes:	issue-logo
 Obsoletes:	issue-pure
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 PLD Linux release file.
