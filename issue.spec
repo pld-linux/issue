@@ -10,7 +10,7 @@ Copyright:	free
 Group:		Base
 Group(pl):	Podstawowe
 Buildarch:	noarch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 PLD Linux release file
