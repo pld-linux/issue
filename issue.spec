@@ -5,15 +5,16 @@ Summary(pl):	Wersja Linuksa PLD
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
 Version:	1.0
-Release:	11
+Release:	12
 License:	GPL
 Group:		Base
 Buildarch:	noarch
 Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
+Obsoletes:	issue-alpha
+Obsoletes:	issue-fancy
 Obsoletes:	issue-logo
 Obsoletes:	issue-pure
-Obsoletes:	issue-fancy
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,8 +31,6 @@ Wersja Linuksa PLD.
 
 %description -l tr
 PLD Linux sürüm dosyasý.
-
-%prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
