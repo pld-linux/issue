@@ -19,7 +19,7 @@ Summary(sv):	PLD Linux versionsfil
 Summary(tr):	PLD Linux sürüm dosyasý
 Summary(zh_CN):	PLD Linux °æ±¾ÎÄ¼þ¡£
 Name:		issue
-Version:	1.99
+Version:	1.1
 Release:	1
 License:	GPL
 Group:		Base
@@ -98,7 +98,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
 c
- .------------------------< PLD Linux 1.99 (Ac) >------------------------*
+ .------------------------< PLD Linux 1.1 (Ra) >------------------------*
 :|:
 :|:  Welcome to \n
 :|:  \d \t
@@ -110,7 +110,7 @@ EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
- .------------------------< PLD Linux 1.99 (Ac) >--------*
+ .------------------------< PLD Linux 1.1 (Ra) >--------*
 :|:
 :|:  Welcome to %h
 :|:  %d
@@ -119,7 +119,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
 
 EOF
 
-echo "1.99 PLD Linux (Ac)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
+echo "1.1 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
 %clean
 rm -rf $RPM_BUILD_ROOT
