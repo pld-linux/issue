@@ -41,7 +41,8 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
 :|:  Welcome to \n
 :|:  \d \t
 :|:
- \`---{ \u users }---[ \r ]---(\m)------*
+ \`---{ \U }---[ \r ]---( \m )------*
+ 
 
 EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
@@ -52,7 +53,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
 :|:  Welcome to %h
 :|:  %d
 :|:
- \`-----------[ %r ]--(%m)------*
+ \`-----------[ %r ]--( %m )------*
  
 EOF
 
