@@ -30,17 +30,15 @@ PLD Linux sürüm dosyasý
 
 %install
 install -d $RPM_BUILD_ROOT/etc
-KERNEL=`uname -r`
-ARCH=`uname -m`
-
-if [ -f /etc/pld-release ]; then
+ 
+if grep -q -e Tornado -e Tsunami /etc/pld-release; then
     echo "1.3 PLD Linux (Tsunami)" > $RPM_BUILD_ROOT/etc/pld-release
     install %{SOURCE0} $RPM_BUILD_ROOT/etc
 
 else 
     echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT/etc/pld-release
     echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT/etc/issue
-    echo Kernel $KERNEL on an $ARCH >> $RPM_BUILD_ROOT/etc/issue
+    echo "Kernel \r on an \m" >> $RPM_BUILD_ROOT/etc/issue
 fi
 
 ln -sf issue $RPM_BUILD_ROOT/etc/issue.net
@@ -49,7 +47,7 @@ ln -sf issue $RPM_BUILD_ROOT/etc/issue.net
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%attr(644,root,root) /etc/*
+%config(noreplace) %attr(644,root,root) /etc/*
 
 %changelog
 * Tue Dec 08 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
