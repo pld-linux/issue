@@ -34,6 +34,8 @@ Wersja Linuksa PLD.
 %description -l tr
 PLD Linux sürüm dosyasý.
 
+%prep
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
