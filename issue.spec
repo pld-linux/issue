@@ -31,24 +31,26 @@ PLD Linux sürüm dosyasý
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
-cat  >> $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
+cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
   .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
  :|:
  :|:  Welcome to \n
  :|:  \d \t
  :|:
-  `-----------[ \r ]--(\m)------*
+  \`-----------[ \r ]--(\m)------*
   
 EOF
-cat  >> $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
+
+cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
   .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
  :|:
  :|:  Welcome to %h
  :|:  %d
  :|:
-  `-----------[ %r ]--(%m)------*
+  \`-----------[ %r ]--(%m)------*
   
 EOF
+
 echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
 %clean
