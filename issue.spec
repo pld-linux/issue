@@ -4,8 +4,8 @@ Summary(fr):	Fichier de version de PLD Linux
 Summary(pl):	Wersja Linuksa PLD
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
-Version:	2.0
-Release:	0.1
+Version:	1.99
+Release:	1
 License:	GPL
 Group:		Base
 Buildarch:	noarch
@@ -38,7 +38,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
 c
- .------------------------< PLD Linux 1.0 (Ra) >------------------------*
+ .------------------------< PLD Linux 1.99 (Ac) >------------------------*
 :|:
 :|:  Welcome to \n
 :|:  \d \t
@@ -50,7 +50,7 @@ EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
- .------------------------< PLD Linux 2.0 (Ac) >--------*
+ .------------------------< PLD Linux 1.99 (Ac) >--------*
 :|:
 :|:  Welcome to %h
 :|:  %d
@@ -59,7 +59,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
 
 EOF
 
-echo "2.0 PLD Linux (Ac)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
+echo "1.99 PLD Linux (Ac)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
 
 %clean
 rm -rf $RPM_BUILD_ROOT
