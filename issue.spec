@@ -24,8 +24,8 @@ PLD Linux Release-Datei
 %description -l fr
 Fichier de version de PLD Linux.
 
-%description
-Wersja Linuxa PLD.
+%description -l pl
+Wersja Linuksa PLD.
 
 %description -l tr
 PLD Linux sürüm dosyasý
