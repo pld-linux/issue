@@ -1,14 +1,17 @@
 Summary:	PLD Linux release file
 Summary(de):	PLD Linux Release-Datei
 Summary(fr):	Fichier de version de PLD Linux
-Summary(pl):	Wersja Linuxa PLD
+Summary(pl):	Wersja Linuksa PLD
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
 Version:	1.0
-Release:	8
+Release:	9
 License:	Free
 Group:		Base
+Group(de):	Gründsätzlich
+Group(es):	Base
 Group(pl):	Podstawowe
+Group(pt_BR):	Base
 Buildarch:	noarch
 Obsoletes:	redhat-release
 Obsoletes:	mandrake-release
@@ -25,7 +28,7 @@ PLD Linux Release-Datei.
 Fichier de version de PLD Linux.
 
 %description -l pl
-Wersja Linuxa PLD.
+Wersja Linuksa PLD.
 
 %description -l tr
 PLD Linux sürüm dosyasý.
@@ -36,7 +39,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
 c
- .----------------------< PLD GNU/Linux 1.0 (Ra) >----------------------*
+ .------------------------< PLD Linux 1.0 (Ra) >------------------------*
 :|:
 :|:  Welcome to \n
 :|:  \d \t
@@ -48,7 +51,7 @@ EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
- .----------------------< PLD GNU/Linux 1.0 (Ra) >------*
+ .------------------------< PLD Linux 1.0 (Ra) >--------*
 :|:
 :|:  Welcome to %h
 :|:  %d
