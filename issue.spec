@@ -104,7 +104,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
-c
  .------------------------< PLD Linux %{distversion} (%{distname}) >------------------------*
 :|:
 :|:  Welcome to \n
