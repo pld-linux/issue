@@ -45,7 +45,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
 :|:  \d \t
 :|:
  \`---{ \U }---[ \r ]---( \m )------*
- 
+
 
 EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
@@ -57,7 +57,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
 :|:  %d
 :|:
  \`-----------[ %r ]--( %m )------*
- 
+
 EOF
 
 echo "1.0 PLD Linux (Ra)" > $RPM_BUILD_ROOT%{_sysconfdir}/pld-release
