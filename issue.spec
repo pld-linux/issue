@@ -1,12 +1,12 @@
 Summary:	PLD Linux release file
 Summary(de):	PLD Linux Release-Datei
 Summary(fr):	Fichier de version de PLD Linux
-Summary(pl):	Wersja Linuxa PLD.
+Summary(pl):	Wersja Linuxa PLD
 Summary(tr):	PLD Linux sürüm dosyasý
 Name:		issue
 Version:	1.0
-Release:	7
-Copyright:	free
+Release:	8
+License:	Free
 Group:		Base
 Group(pl):	Podstawowe
 Buildarch:	noarch
@@ -16,19 +16,19 @@ Obsoletes:	issue-logo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PLD Linux release file
+PLD Linux release file.
 
 %description -l de
-PLD Linux Release-Datei
+PLD Linux Release-Datei.
 
 %description -l fr
 Fichier de version de PLD Linux.
 
 %description -l pl
-Wersja Linuksa PLD.
+Wersja Linuxa PLD.
 
 %description -l tr
-PLD Linux sürüm dosyasý
+PLD Linux sürüm dosyasý.
 
 %install
 rm -rf $RPM_BUILD_ROOT
