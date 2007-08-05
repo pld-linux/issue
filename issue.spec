@@ -25,7 +25,7 @@ Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		issue
 Version:	%{distversion}
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base
 Obsoletes:	issue-alpha
