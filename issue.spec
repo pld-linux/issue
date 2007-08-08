@@ -25,15 +25,21 @@ Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		issue
 Version:	%{distversion}
-Release:	2
+Release:	3
 License:	GPL
 Group:		Base
+Provides:	issue-package
 Obsoletes:	issue-alpha
 Obsoletes:	issue-fancy
 Obsoletes:	issue-logo
+Obsoletes:	issue-package
 Obsoletes:	issue-pure
 Obsoletes:	mandrake-release
 Obsoletes:	redhat-release
+Conflicts:	issue-alpha < 2.99-2
+Conflicts:	issue-fancy < 2.99-2
+Conflicts:	issue-logo < 2.99-2
+Conflicts:	issue-pure < 2.99-5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
