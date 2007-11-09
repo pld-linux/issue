@@ -1,7 +1,6 @@
 
-%define	distname	Th
-%define	distversion	2.99
-%define	distrelease	"%{distversion} PLD Linux (%{distname})"
+%define	distname	Titanium
+%define	distrelease	"PLD Linux %{distname}"
 
 Summary:	PLD Linux release file
 Summary(cs.UTF-8):	Soubor s číslem verze systému PLD Linux
@@ -24,8 +23,8 @@ Summary(sv.UTF-8):	PLD Linux versionsfil
 Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		issue
-Version:	%{distversion}
-Release:	3
+Version:	1.0
+Release:	1
 License:	GPL
 Group:		Base
 Provides:	issue-package
@@ -110,7 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
- .------------------------< PLD Linux %{distversion} (%{distname}) >------------------------*
+ .------------------------< PLD Linux %{distname} >------------------------*
 :|:
 :|:  Welcome to \n
 :|:  \d \t
@@ -122,7 +121,7 @@ EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
- .------------------------< PLD Linux %{distversion} (%{distname}) >--------*
+ .------------------------< PLD Linux %{distname} >--------*
 :|:
 :|:  Welcome to %h
 :|:  %d
