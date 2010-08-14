@@ -1,6 +1,6 @@
 
-%define	distname	Titanium
-%define	distrelease	"PLD Linux %{distname}"
+%define	distversion	2010.01
+%define	distrelease	PLD Linux Titanium %{distversion}
 
 Summary:	PLD Linux release file
 Summary(cs.UTF-8):	Soubor s číslem verze systému PLD Linux
@@ -23,7 +23,7 @@ Summary(sv.UTF-8):	PLD Linux versionsfil
 Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		issue
-Version:	1.0
+Version:	%{distversion}
 Release:	1
 License:	GPL
 Group:		Base
@@ -109,7 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
- .------------------------< PLD Linux %{distname} >------------------------*
+ .------------------------< %{distrelease} >------------------------*
 :|:
 :|:  Welcome to \n
 :|:  \d \t
@@ -121,7 +121,7 @@ EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
- .------------------------< PLD Linux %{distname} >--------*
+ .------------------------< %{distrelease} >--------*
 :|:
 :|:  Welcome to %h
 :|:  %d
