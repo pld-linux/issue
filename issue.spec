@@ -1,6 +1,6 @@
 
 %define	distversion	2010.01
-%define	distrelease	PLD Linux Titanium %{distversion}
+%define	distrelease	PLD Linux Titanium (Ti) %{distversion}
 
 Summary:	PLD Linux release file
 Summary(cs.UTF-8):	Soubor s číslem verze systému PLD Linux
@@ -24,7 +24,7 @@ Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		issue
 Version:	%{distversion}
-Release:	1
+Release:	2
 License:	GPL
 Group:		Base
 Provides:	issue-package
