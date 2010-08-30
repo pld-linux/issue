@@ -23,7 +23,7 @@ Summary(tr.UTF-8):	PLD Linux sürüm dosyası
 Summary(zh_CN.UTF-8):	PLD Linux 版本文件。
 Name:		issue
 Version:	%{distversion}
-Release:	3
+Release:	4
 License:	GPL
 Group:		Base
 Provides:	issue-package
@@ -108,7 +108,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue <<EOF
- .------------------------< PLD Linux Titanium (Ti) %{distversion} >------------------------*
+ .--------------------< PLD Linux Titanium (Ti) %{distversion} >---------------------*
 :|:
 :|:  Welcome to \n
 :|:  \d \t
@@ -120,7 +120,7 @@ EOF
 echo -ne "\l " >> $RPM_BUILD_ROOT%{_sysconfdir}/issue
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/issue.net <<EOF
- .------------------------< PLD Linux Titanium (Ti) %{distversion} >--------*
+ .--------------------< PLD Linux Titanium (Ti) %{distversion} >---------------------*
 :|:
 :|:  Welcome to %h
 :|:  %d
