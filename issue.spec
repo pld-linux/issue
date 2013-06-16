@@ -18,7 +18,6 @@ License:	GPL
 Group:		Base
 BuildRequires:	pld-release >= 3.0
 %requires_eq	pld-release
-Provides:	issue-package
 Obsoletes:	issue-alpha
 Obsoletes:	issue-fancy
 Obsoletes:	issue-logo
